@@ -25,3 +25,4 @@ jobs:
         uses: actions/upload-artifact@v2.2.2
         with:
           path: projector-launcher/build/electronOut/*.zip
+
