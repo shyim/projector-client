@@ -20,3 +20,8 @@ jobs:
       - run: sudo apt update && sudo apt install wine-stable -y
       - name: check projector-launcher building
         run: ./gradlew :projector-launcher:distZip
+
+      - name: Upload Artifiacts
+        uses: actions/upload-artifact@v2.2.2
+        with:
+          path: projector-launcher/build/electronOut/*.zip
